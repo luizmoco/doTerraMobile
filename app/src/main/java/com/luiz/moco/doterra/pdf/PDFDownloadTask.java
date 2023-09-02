@@ -1,4 +1,4 @@
-package com.luiz.moco.doterra;
+package com.luiz.moco.doterra.pdf;
 
 import android.os.AsyncTask;
 

@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">doTerra</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="produto">Produto: </string>
+    <string name="grupo_produto">Grupo produto: </string>
+    <string name="valor_original">Valor original: </string>
+    <string name="valor_membro">Valor membro: </string>
+    <string name="valor_venda">Valor venda: </string>
+    <string name="valor_ganho">Valor ganho: </string>
+    <string name="valor_pp">Valor por ponto: </string>
+    <string name="selecione_produto">Selecione o produto</string>
+    <string name="doterra">doTerra | Consultor de Bem-Estar</string>
+    <string name="carregando">Carregando ...</string>
+    <string name="selecione_um_produto">Selecione um produto</string>
+
+
 </resources>

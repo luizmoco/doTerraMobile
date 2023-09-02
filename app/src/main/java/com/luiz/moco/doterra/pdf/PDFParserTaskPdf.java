@@ -1,10 +1,11 @@
-package com.luiz.moco.doterra;
+package com.luiz.moco.doterra.pdf;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
+import com.luiz.moco.doterra.model.Produto;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -81,24 +82,6 @@ public class PDFParserTaskPdf extends AsyncTask<InputStream, Void, List<Produto>
                 if (posicaoPrecoRegular > 0 && posicaoPrecoMembro > 0) {
                     Produto p = getProduto(linha);
                     produtos.add(p);
-                } else {
-                    int count = 0;
-                    while ((posicaoPrecoRegular <= 0 && posicaoPrecoMembro <= 0) || count == 10) {
-                        i++;
-                        linha = linha.concat(products[i]);
-                        posicaoPrecoRegular = linha.indexOf("$");
-                        posicaoPrecoMembro = 0;
-                        posicaoPrecoMembro = linha.indexOf("$", posicaoPrecoRegular + 1);
-                        count++;
-                    }
-                    if (count == 10) {
-                        System.out.println(linha);
-                    } else {
-
-                        Produto p = getProduto(linha);
-                        produtos.add(p);
-                    }
-
                 }
             }
         }
